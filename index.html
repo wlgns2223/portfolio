@@ -17,6 +17,7 @@
     <title>Shimi's Portfolio</title>
 </head>
 <body>
+    <!-- 마진 상쇄가 일어나는데 이 부분은 어떻게 해결? -> 난 일단 패딩으로 해결함 -->
     <div class="wrap">
         <h1 class="blind">Shimi's Portfolio</h1>
         <header class="myheader">
@@ -24,7 +25,7 @@
         
             <nav class="mynav inner clearfix">
                 <a class="logo" href="#">
-                    <img class="logo__img" src="./favicon.png" type='icon' alt="logo image">
+                    <img class="logo__img" src="./favicon.png" type='icon' alt="로고 이미지">
                     <span class="logo__title">Shimi</span>
                 </a>
                 <div class="menu_wrap ">
@@ -40,7 +41,42 @@
             </nav>
         </header>
         <section class="introduction">
-
+            <h2 class="blind">소개 인사</h2>
+            <article class="inner">
+                <div class="introduction__img-wrap">
+                    <img src="./image/kogi.JPG" alt="">
+                </div>
+                <p class="introduction__greeting">Hello,<br>I'm Shimi</p>
+                <p class="introduction__desc">A Software Engineer Currently in Korea</p>
+                <button class="introduction__btn">Contact Me</button>
+            </article>
+        </section>
+        <section class="aboutme">
+            <h2 class="blind">자기소개</h2>
+            <article class="inner">
+                <span class="aboutme__title">
+                    About me
+                </span>
+                <p class="aboutme__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit enim, mattis ut suscipit eget, faucibus a lectus. Fusce luctus cursus dui sed elementum. Ut molestie nec mi mollis luctus. Aenean id metus non felis congue semper. In hac habitasse platea dictumst. Maecenas interdum gravida mauris, eget rhoncus metus pellentesque a. Nunc non nunc mollis, finibus sapien non, mattis quam. Ut venenatis fermentum enim non cursus. Aenean accumsan, mauris nec commodo pretium, augue arcu elementum justo, a commodo velit purus sed tortor. Mauris pharetra sagittis neque a semper. Phasellus lacinia cursus tellus ut congue. Nullam vitae nisl euismod tortor laoreet aliquet.
+                </p>
+                <ul class="fields">
+                    <li class="fields__item">
+                        <div class="fields__img-wrap">
+                            <img src="./image/js.png" alt="자바스크립트 이미지">
+                        </div>
+                        <span class="fields__title">Front-End</span>
+                        <p class="fields__desc">HTML, CSS, Javascript, Typescript, React, Web APIs</p>
+                    </li>
+                    <li class="fields__item">
+                        <div class="fields__img-wrap">
+                            <img src="./image/js.png" alt="자바스크립트 이미지">
+                        </div>
+                        <span class="fields__title">Back-End</span>
+                        <p class="fields__desc">Node.js, Express, AWS</p>
+                    </li>
+                </ul>
+            </article>
         </section>
         
         

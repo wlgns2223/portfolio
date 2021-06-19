@@ -26,13 +26,14 @@ a {
 .inner{
     max-width: 980px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* NAV */
 .myheader{
-    position: absolute;
+    position: fixed;
     top: 0; left: 0; right: 0;
-    background-color: #3dbab2
+    background-color: #3dbab2;
 }
 
 .mynav {
@@ -87,4 +88,140 @@ a {
 .menu__link{
     color: #fff;
 }
+
+/* INTRODUCTION */
+
+.introduction{
+    background: url(./image/bg.png) no-repeat;
+    background-color: #3dbab2;
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction .inner{
+    text-align: center;
+    padding: 100px 20px 50px;
+    
+}
+
+.introduction__img-wrap{
+    display: inline-block;
+    border: 10px solid #fff;
+    border-radius: 50%;   
+    overflow: hidden; 
+}
+
+.introduction__img-wrap img{
+    width: 400px;    
+    margin-bottom: -4px;
+    border-radius: 50%;
+}
+
+.introduction__greeting{
+    margin-top: 30px;
+    font-size: 60px;
+    color: #fff;
+    line-height: 64px;
+}
+
+.introduction__desc{
+    margin-top: 30px;
+    font-size: 48px;
+    line-height: 52px;
+    color: #fff;
+}
+
+.introduction__btn{
+    margin-top: 20px;
+    background: transparent;
+    color: #fff;
+    padding: 20px 40px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 19px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+/* ABOUT ME */
+
+.aboutme .inner{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.aboutme__title{
+    font-size: 60px;
+    line-height: 64px;
+    color: #000;
+}
+
+.aboutme__desc{
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 84px;
+    font-size: 24px;
+    line-height: 28px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    color: #000;
+    margin-top: 15px;
+}
+
+.fields{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.fields__item{
+    max-width: 300px;
+    text-align: center;
+}
+
+.fields__img-wrap{
+    width: 200px;
+    height: 200px;
+    border: 4px solid #3dbab2;;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.fields__img-wrap img{
+    position: absolute;
+    width: 150px;
+    border-radius: 50%;
+    left: 25px;top: 25px;
+}
+
+.fields__title{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 34px;
+    line-height: 38px;
+}
+
+.fields__desc{
+    margin-top: 15px;
+    font-size: 21px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #636e72;
+
+    /* 여러줄 말줄임 처리 */
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 50px;
+    font-size: 21px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+
 
