@@ -1,0 +1,90 @@
+/* COMMON */
+html,body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: '';
+
+}
+
+.blind{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    position: absolute;
+    overflow: hidden;
+}
+
+.inner{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* NAV */
+.myheader{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background-color: #3dbab2
+}
+
+.mynav {
+    height: 70px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+.mynav .logo{
+    float: left;
+    display: flex;    
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.logo__img{
+    width: 70px;
+    height: 70px;
+}
+
+
+.menu_wrap{
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.mynav .menu{
+    display: flex;
+}
+
+.menu .menu__item{
+    margin-right: 20px;
+    
+}
+
+.now{
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    box-sizing: border-box;
+
+}
+
+.menu .menu__item:last-child{
+    margin-right: 0px;
+}
+
+.menu__link{
+    color: #fff;
+}
+
