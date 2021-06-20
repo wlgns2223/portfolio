@@ -438,3 +438,9 @@ a {
 .testimonials__who span{
     color: coral;
 }
+
+/* contact */
+
+.contact{
+    background-color: lightpink;
+}
