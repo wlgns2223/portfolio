@@ -5,6 +5,7 @@ html,body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .clearfix::after{
@@ -26,13 +27,45 @@ a {
 .inner{
     max-width: 980px;
     margin: 0 auto;
+    text-align: center;
+    padding: 100px 20px 50px;
 }
+
+.section-title{
+    font-size: 60px;
+    line-height: 64px;
+    color: #000;
+}
+
+.section-desc{
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 84px;
+    font-size: 24px;
+    line-height: 28px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    color: #000;
+    margin-top: 15px;
+}
+
+.section-sub-title{
+    display: block;
+    font-size: 44px;
+    line-height: 48px;
+    color: #000;
+    margin-top: 20px;
+}
+
 
 /* NAV */
 .myheader{
     position: fixed;
     top: 0; left: 0; right: 0;
     background-color: #3dbab2;
+    z-index: 10;
 }
 
 .mynav {
@@ -101,12 +134,6 @@ a {
     background-position: center;
 }
 
-.introduction .inner{
-    text-align: center;
-    padding: 100px 20px 50px;
-    
-}
-
 .introduction__img-wrap{
     display: inline-block;
     border: 10px solid #fff;
@@ -147,31 +174,6 @@ a {
 }
 
 /* ABOUT ME */
-
-.aboutme .inner{
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.aboutme__title{
-    font-size: 60px;
-    line-height: 64px;
-    color: #000;
-}
-
-.aboutme__desc{
-    display: -webkit-box;
-    overflow: hidden;
-    max-height: 84px;
-    font-size: 24px;
-    line-height: 28px;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    word-break: break-all;
-    color: #000;
-    margin-top: 15px;
-}
 
 .fields{
     display: flex;
@@ -232,39 +234,6 @@ a {
 
 .skills{
     background-color: beige;
-}
-
-.skills .inner{
-    text-align: center;
-    padding: 100px 20px 50px;
-}
-
-.skills__title{
-    display: block;
-    font-size: 50px;
-    line-height: 54px;
-    color: #000;
-}
-
-.skills__sub-title{
-    display: block;
-    font-size: 44px;
-    line-height: 48px;
-    color: #000;
-    margin-top: 15px;
-}
-
-.skills__desc{
-    margin-top: 15px;
-    display: -webkit-box;
-    overflow: hidden;
-    max-height: 75px;
-    font-size: 21px;
-    line-height: 25px;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    word-break: break-all;
 }
 
 .skills__block{
@@ -337,7 +306,6 @@ a {
 
 .list__item .javascript .guage{
     flex-basis: 90%;
-
 }
 
 .list__item .react .guage{
@@ -377,3 +345,54 @@ a {
 }
 
 
+/* My Work */
+
+.works .projects{
+    display: flex;
+    margin: 20px auto 0;
+    width: 80%;
+    justify-content: center;
+}
+
+.works .projects__item{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    flex: 1 1 0;
+}
+
+
+.works .examples{
+    width: 100%;
+    height: 400px;
+    margin: 40px auto 0;
+    table-layout: fixed;
+    border-spacing: 4px;
+    border-collapse: separate;
+}
+
+.examples td{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+
+.examples td .img-wrap{
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0 10px;
+}
+
+.examples td img{
+    display: block;
+    width: 200px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+
+/* Testimonial */
+.testimonials{
+    background-color: lightgray;
+}
