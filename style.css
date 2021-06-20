@@ -396,3 +396,45 @@ a {
 .testimonials{
     background-color: lightgray;
 }
+
+.testimonials-wrap {
+    display: flex;
+    margin-top: 30px;
+}
+
+.testimonials-wrap .img-wrap img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.testimonials__content-wrap{
+    background-color: seashell;
+    padding: 20px 30px;
+    margin-left: 10px;
+    border: 1px solid seashell;
+    border-radius: 10px;
+}
+
+
+.testimonials__content{
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 72px;
+    font-size: 21px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+}
+
+.testimonials__who{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.testimonials__who span{
+    color: coral;
+}
