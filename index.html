@@ -20,6 +20,8 @@
     <!-- 마진 상쇄가 일어나는데 이 부분은 어떻게 해결? -> 난 일단 패딩으로 해결함 -->
     <div class="wrap">
         <h1 class="blind">Shimi's Portfolio</h1>
+
+        <!--  HEADER-->
         <header class="myheader">
             <h2 class="blind">Menus</h2>
         
@@ -30,17 +32,31 @@
                 </a>
                 <div class="menu_wrap ">
                     <ul class="menu">
-                        <li class="menu__item"><a class="menu__link now" href="">Home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">About</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Skills</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">My Work</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Testimonial</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link now" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#aboutme">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#skills">Skills</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#works">My Work</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#testimonials">Testimonial</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section class="introduction">
+
+        <!-- INTRODUCTION -->
+        <section id="introduction">
             <h2 class="blind">소개 인사</h2>
             <article class="inner">
                 <div class="introduction__img-wrap">
@@ -51,7 +67,9 @@
                 <button class="introduction__btn">Contact Me</button>
             </article>
         </section>
-        <section class="aboutme">
+
+        <!-- ABOUT ME -->
+        <section id="aboutme">
             <h2 class="blind">자기소개</h2>
             <article class="inner">
                 <h3 class="section-title">
@@ -78,7 +96,9 @@
                 </ul>
             </article>
         </section>
-        <section class="skills">
+
+        <!-- SKILLS -->
+        <section id="skills">
             <h2 class="blind">기술들</h2>
             <article class="inner">
                 <h3 class="section-title">Skills</h3>
@@ -155,9 +175,10 @@
                     </div>
                 </div>
             </article>
-
         </section>
-        <section class="works">
+
+        <!-- WORKS -->
+        <section id="works">
             <h2 class="blind">나의 프로젝트들</h2>
             <article class="inner">
                 <h3 class="section-title">My Work</h3>
@@ -217,7 +238,9 @@
                 </table>
             </article>
         </section>
-        <section class="testimonials">
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials">
             <h2 class="blind">Testimonial</h2>
             <article class="inner">
                 <h3 class="section-title">Testimonial</h3>
@@ -248,7 +271,9 @@
                 </div>
             </article>
         </section>
-        <footer class="contact">
+
+        <!-- CONTACT -->
+        <footer id="contact">
             <div class="inner">
                 <ul>
                     <li>Let's Talk</li>
