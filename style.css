@@ -50,7 +50,7 @@ a {
 }
 
 .inner{
-    max-width: 980px;
+    max-width: 1080px;
     margin: 0 auto;
     text-align: center;
     padding: 100px 20px 50px;
@@ -137,8 +137,8 @@ a {
 .now{
     padding: 10px;
     border: 1px solid #fff;
-    border-radius: 10%;
     box-sizing: border-box;
+    border-radius: 10%;
 
 }
 
@@ -148,15 +148,20 @@ a {
 
 .menu__link{
     color: var(--color-white);
+    padding: 10px;
+}
+
+.menu__link:hover{
+    background-color: darkseagreen;
+    border-radius: 10%;
+    
 }
 
 /* INTRODUCTION */
 
 #introduction{
-    background: url(./image/bg.png) no-repeat;
+    background: url(./image/bg.png) center/cover no-repeat;
     background-color: #3dbab2;
-    background-size: cover;
-    background-position: center;
 }
 
 .introduction__img-wrap{
@@ -191,6 +196,7 @@ a {
     font-size: 19px;
     line-height: 22px;
     cursor: pointer;
+    outline: none;
 }
 
 /* ABOUT ME */
