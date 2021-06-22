@@ -319,31 +319,6 @@ a {
     background-color: yellowgreen;
 }
 
-.list__item .html .guage{
-    flex-basis: 99%;
-    
-
-}
-
-.list__item .css .guage{
-    flex-basis: 90%;
-
-}
-
-.list__item .javascript .guage{
-    flex-basis: 90%;
-}
-
-.list__item .react .guage{
-    flex-basis: 80%;
-
-}
-
-.list__item .node .guage{
-    flex-basis: 77%;
-
-}
-
 .skills__info{
     flex-basis: 40%;
     background-color: lightgray;
@@ -393,6 +368,28 @@ a {
     background-color: #fff;
     width: 100%;
 }
+
+.projects__count{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    background-color: orange;
+    color: var(--color-white);
+    position: relative;
+    top: -30px;
+    opacity: 0;
+    transition: all 300ms ease-in;
+}
+
+.projects__all:hover .projects__count{
+    opacity: 1;
+    top: 0;
+}
+
+
 .projects__btn:active{
     color: lightslategray;
 }
