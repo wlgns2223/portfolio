@@ -1,5 +1,30 @@
+/* GLOBAL */
+:root {
+    
+    /* FONT COOLORS */
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* FONT SIZE */
+    --font-large: 60px;
+    --font-medium: 44px;
+    --font-regular: 24px;
+
+
+    --line-height-large: 64px;
+    --line-height-medium: 48px;
+    --line-height-regular: 28px;
+    
+
+}
+
+
+
+
+
 /* COMMON */
-html,body {
+
+.wrap{
     font-family: 'Open Sans',sans-serif;
 }
 
@@ -32,30 +57,30 @@ a {
 }
 
 .section-title{
-    font-size: 60px;
-    line-height: 64px;
-    color: #000;
+    font-size: var(--font-large);
+    line-height: var(--line-height-large);
+    color: var(--color-black);
 }
 
 .section-desc{
     display: -webkit-box;
     overflow: hidden;
     max-height: 84px;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: var(--font-regular);
+    line-height: var(--line-height-regular);
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     word-break: break-all;
-    color: #000;
+    color: var(--color-black);
     margin-top: 15px;
 }
 
 .section-sub-title{
     display: block;
-    font-size: 44px;
-    line-height: 48px;
-    color: #000;
+    font-size: var(--font-medium);
+    line-height: var(--line-height-medium);
+    color: var(--color-black);
     margin-top: 20px;
 }
 
@@ -84,7 +109,7 @@ a {
     display: flex;    
     align-items: center;
     height: 100%;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .logo__img{
@@ -122,7 +147,7 @@ a {
 }
 
 .menu__link{
-    color: #fff;
+    color: var(--color-white);
 }
 
 /* INTRODUCTION */
@@ -147,18 +172,13 @@ a {
     border-radius: 50%;
 }
 
-.introduction__greeting{
-    margin-top: 30px;
-    font-size: 60px;
-    color: #fff;
-    line-height: 64px;
+#introduction .section-title{
+    color: var(--color-white);
+    margin-top: 20px;
 }
 
-.introduction__desc{
-    margin-top: 30px;
-    font-size: 48px;
-    line-height: 52px;
-    color: #fff;
+#introduction .section-sub-title{
+    color: var(--color-white)
 }
 
 .introduction__btn{
