@@ -89,10 +89,14 @@ a {
 .myheader{
     position: fixed;
     top: 0; left: 0; right: 0;
-    /* background-color: #3dbab2; */
     background-color: transparent;
     z-index: 10;
-    transition: all 300ms linear;
+    transition: all 300ms ease-in-out;
+}
+
+.myheader.myheader--dark{
+    background-color: #3dbab2;
+
 }
 
 .mynav {
@@ -100,6 +104,10 @@ a {
     font-size: 22px;
     line-height: 26px;
     position: relative;
+}
+
+.mynav.mynav--short{
+    height: 50px;
 }
 
 .mynav .toggle{
@@ -148,7 +156,6 @@ a {
 }
 
 .now{
-    padding: 10px;
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 10%;
@@ -161,7 +168,7 @@ a {
 
 .menu__link{
     color: var(--color-white);
-    padding: 10px;
+    padding: 4px;
 }
 
 .menu__link:hover{
