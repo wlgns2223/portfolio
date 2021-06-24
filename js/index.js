@@ -25,10 +25,19 @@ const menuList = document.querySelector('.menu');
 menuList.addEventListener('click',(e) => {
     e.preventDefault();
     const id = e.target.dataset.link;
-    document.querySelector(id).scrollIntoView({behavior: "smooth"});
+    scrollTo(id);
 
     const now = document.querySelector(".menu .now");
     now.classList.remove('now');
     e.target.classList.add('now');
 
 });
+
+const contactBtn = document.querySelector('.introduction__btn');
+contactBtn.addEventListener('click',(e)=>{
+    scrollTo('#contact');
+});
+
+function scrollTo(selector){
+    document.querySelector(selector).scrollIntoView({behavior: 'smooth'});
+}
