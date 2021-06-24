@@ -184,6 +184,10 @@ a {
     background-color: #3dbab2;
 }
 
+.opacity{
+    opacity: 1;
+}
+
 .introduction__img-wrap{
     display: inline-block;
     border: 10px solid #fff;

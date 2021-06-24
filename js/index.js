@@ -1,8 +1,22 @@
 'use strict'
 
-
 // navbar 투명하게, 높이를 줄임
-window.addEventListener('scroll',(e)=>{
+document.addEventListener('scroll',(e)=>{
+
+    changeNavBar();
+    changeIntroductionOpacity();
+    
+});
+
+function changeIntroductionOpacity(){
+    const introduction = document.querySelector('#introduction');
+    const introductionHeight = introduction.getBoundingClientRect().height;
+    const elem = document.querySelector('.opacity');
+    elem.style.opacity = 1 - (window.scrollY / introductionHeight);
+    
+}
+
+function changeNavBar(){
     const currentScroll = window.scrollY;
     const $mynav = document.querySelector('.mynav');
     const navHeight = $mynav.getBoundingClientRect().height;
@@ -17,13 +31,19 @@ window.addEventListener('scroll',(e)=>{
         $header.classList.remove('myheader--dark');
         $mynav.classList.remove('mynav--short');
     }
-});
+}
 
 
 // 캡쳐링과 버블링에 대해 알아보자
 const menuList = document.querySelector('.menu');
 menuList.addEventListener('click',(e) => {
     e.preventDefault();
+
+    if(!e.target.matches('.menu .menu__link')){
+        return;
+    }
+
+
     const id = e.target.dataset.link;
     scrollTo(id);
 
