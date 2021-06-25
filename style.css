@@ -19,13 +19,11 @@
 }
 
 
-
-
-
 /* COMMON */
 
 .wrap{
     font-family: 'Open Sans',sans-serif;
+    position: relative;
 }
 
 a {
@@ -535,6 +533,29 @@ a {
 
 #contact{
     background-color: lightpink;
+    position: relative;
+}
+
+
+/* ARROW UP BTN */
+.arrow__up{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    font-size: 36px;
+    border-radius: 50%;
+    color: var(--color-white);
+    padding: 20px 30px;
+    background-color: lightpink;
+    cursor: pointer;
+    display: none;
+    border: none;
+    pointer-events: none;
+}
+
+.arrow__up.visible{
+    display: block;
+    pointer-events: auto;
 }
 
 @media screen and (max-width: 768px){

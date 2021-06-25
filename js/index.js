@@ -5,8 +5,22 @@ document.addEventListener('scroll',(e)=>{
 
     changeNavBar();
     changeIntroductionOpacity();
+    showArrowUp();
     
 });
+
+function showArrowUp(){
+    const elem = document.querySelector('.arrow__up');
+    const introductionHeight = document.getElementById('introduction').getBoundingClientRect().height;
+    if(window.scrollY > introductionHeight/2){
+        elem.classList.add('visible');
+    } else {
+        elem.classList.remove('visible');
+    }
+
+    elem.style.opacity = window.scrollY / introductionHeight;
+    
+}
 
 function changeIntroductionOpacity(){
     const introduction = document.querySelector('#introduction');
@@ -15,6 +29,8 @@ function changeIntroductionOpacity(){
     elem.style.opacity = 1 - (window.scrollY / introductionHeight);
     
 }
+
+
 
 function changeNavBar(){
     const currentScroll = window.scrollY;
@@ -61,3 +77,8 @@ contactBtn.addEventListener('click',(e)=>{
 function scrollTo(selector){
     document.querySelector(selector).scrollIntoView({behavior: 'smooth'});
 }
+
+const topElem = document.querySelector('.arrow__up');
+topElem.addEventListener('click',(e)=>{
+    scrollTo('#introduction');
+})
