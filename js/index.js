@@ -51,6 +51,7 @@ function changeNavBar(){
 
 
 // 캡쳐링과 버블링에 대해 알아보자
+// MENU CLICK BORDER
 const menuList = document.querySelector('.menu');
 menuList.addEventListener('click',(e) => {
     e.preventDefault();
@@ -69,6 +70,7 @@ menuList.addEventListener('click',(e) => {
 
 });
 
+// CONTACT BTN
 const contactBtn = document.querySelector('.introduction__btn');
 contactBtn.addEventListener('click',(e)=>{
     scrollTo('#contact');
@@ -81,4 +83,27 @@ function scrollTo(selector){
 const topElem = document.querySelector('.arrow__up');
 topElem.addEventListener('click',(e)=>{
     scrollTo('#introduction');
-})
+});
+
+
+// WORK FILTERING
+const projectLists = document.querySelector('.projects');
+projectLists.addEventListener('click',(e)=>{
+    const category = e.target.dataset.category;
+    
+    const itemList = document.querySelectorAll('.examples li');
+    const itemListContainer = document.querySelector('.examples');
+
+    itemListContainer.classList.add('animation--out');
+    setTimeout(()=>{
+        itemList.forEach((elem) => {
+            if(elem.dataset.type === category){
+                elem.classList.add('invisible');
+            } else {
+                elem.classList.remove('invisible');
+            }
+        });
+        itemListContainer.classList.remove('animation--out');
+    },300)
+    
+});

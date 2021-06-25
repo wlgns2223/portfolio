@@ -379,6 +379,7 @@ a {
 
 #works .projects__item{
     flex: 1 1 0;
+    
 }
 
 .projects__btn{
@@ -389,6 +390,7 @@ a {
     line-height: 28px;
     background-color: #fff;
     width: 100%;
+    cursor: pointer;
 }
 
 .projects__count{
@@ -404,6 +406,7 @@ a {
     top: -30px;
     opacity: 0;
     transition: all 300ms ease-in;
+    pointer-events: none;
 }
 
 .projects__all:hover .projects__count{
@@ -416,27 +419,41 @@ a {
     color: lightslategray;
 }
 
-#works .examples{
-    width: 100%;
+.examples{
     margin: 40px auto 0;
-    table-layout: fixed;
-    border-spacing: 4px;
-    border-collapse: separate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 1;
+    transition: all 300ms ease-out;
 }
 
-.examples td{
-    border: 1px solid lightgray;
-    background-color: lightgray;
+.invisible{
+    display: none;
 }
 
-.examples td .img-wrap{
+.examples.animation--out{
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
+    
+}
+
+
+.examples li{
+    width: 260px;
+    background-color: lightgrey;
+    margin: 2px;
+}
+
+.examples .img-wrap{
     width: 100%;
     overflow: hidden;
     display: block;
     position: relative;
+    cursor: pointer;
 }
 
-.examples td img{
+.examples img{
     display: block;
     width: 200px;
     height: 280px;
@@ -459,7 +476,7 @@ a {
     opacity: 0;
 }
 
-.examples td:hover .examples__desc{
+.examples .img-wrap:hover .examples__desc{
     opacity: 1;
     transform: translateY(0);
 }
@@ -480,6 +497,11 @@ a {
     top: 50%;
     transform: translate(-50%,50%);
 }
+
+
+
+
+
 
 
 /* Testimonial */
