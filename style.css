@@ -391,6 +391,11 @@ a {
     background-color: #fff;
     width: 100%;
     cursor: pointer;
+    
+}
+
+.projects__btn.active{
+    background-color: lightpink;
 }
 
 .projects__count{

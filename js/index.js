@@ -90,7 +90,6 @@ topElem.addEventListener('click',(e)=>{
 const projectLists = document.querySelector('.projects');
 projectLists.addEventListener('click',(e)=>{
     const category = e.target.dataset.category;
-    
     const itemList = document.querySelectorAll('.examples li');
     const itemListContainer = document.querySelector('.examples');
 
@@ -104,6 +103,19 @@ projectLists.addEventListener('click',(e)=>{
             }
         });
         itemListContainer.classList.remove('animation--out');
+
+        for(const elem of projectLists.children){
+            if(elem.children[0] === e.target){
+                elem.children[0].classList.add('active');
+            } else {
+                elem.children[0].classList.remove('active');
+            }
+        }
     },300)
+
+
+
     
 });
+
+
